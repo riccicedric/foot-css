@@ -1,0 +1,16 @@
+
+/* 
+Foot.css v0.0.1 | Copyright 2020 Cédric Ricci
+MIT License | https://github.com/riccicedric/foot-css
+*/
+
+/* Base Styles =============================*/
+
+* {
+    box-sizing: border-box;
+}
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
