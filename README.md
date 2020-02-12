@@ -1,5 +1,5 @@
 <a href="https://github.com/riccicedric/foot-css">
-  <img src="https://riccicedricdesign.com/git/foot-css.svg" width="72" height="72">
+  <img src="https://riccicedricdesign.com/git/foot-css.svg" width="128" height="128">
 </a>
 
 # Foot.css
