@@ -7,7 +7,6 @@
 <h1 align="center">foot.css</h1>
 
 <p align="center">Minimalist CSS framework</p>
-[![Packagist](https://img.shields.io/badge/license-MIT-blue.svg)](https://riccicedric.github.io/foot-css/license)
 
 # foot.css
 Minimalist CSS framework
