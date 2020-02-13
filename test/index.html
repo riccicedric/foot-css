@@ -6,10 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML5 Test Page</title>
   <link rel="stylesheet" href="../dist/foot.min.css">
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"></script>
 </head>
 
 <body>
-  <div id="top" class="page" role="document">
+  <div class="container foot-container-md" role="document">
     <header role="banner">
       <h1>HTML5 Test Page</h1>
       <p>This is a test page filled with common HTML elements to be used to provide visual feedback whilst building CSS
@@ -33,9 +34,6 @@
             <h5>Heading 5</h5>
             <h6>Heading 6</h6>
           </div>
-          <footer>
-            <p><a href="#top">[Top]</a></p>
-          </footer>
         </article>
 
         <article id="text__code">
@@ -47,9 +45,6 @@
                 <code>body, html { height: 100%; }</code>
               </pre>
           </div>
-          <footer>
-            <p><a href="#top">[Top]</a></p>
-          </footer>
         </article>
 
         <article id="text__paragraphs">
@@ -62,9 +57,6 @@
               sentences. Though not required by the syntax of any language, paragraphs are usually an expected part of
               formal writing, used to organize longer prose.</p>
           </div>
-          <footer>
-            <p><a href="#top">[Top]</a></p>
-          </footer>
         </article>
 
         <article id="text__nav">
@@ -84,17 +76,20 @@
             <h1>Buttons</h1>
           </header>
           <div>
-            <a class="button">Button</a>
-            <a class="button outline">Outline</a>
-            <a class="button outline dark">Outline dark</a>
-            <a class="button outline light">Outline light</a>
+            <p>
+              <a class="button">Button</a>
+              <a class="button outline">Outline</a>
+              <a class="button outline dark">Outline dark</a>
+              <a class="button outline light">Outline light</a>
+              <a class="button"><i class="fas fa-user"></i>Button with icon</a>
+            </p>  
+            <p>
+              <a class="button foot-full-width-size">Full width Button</a>
+            </p>
+            <p>
+              <a class="button foot-full-width-size"><i class="fas fa-user"></i>Full width Button with icon</a>
+            </p>            
           </div>
-          <div>
-            <a class="button foot-full-width-size">Full width Button</a>
-          </div>
-          <footer>
-            <p><a href="#top">[Top]</a></p>
-          </footer>
         </article>
 
         <article id="text__blockquotes">
@@ -110,9 +105,6 @@
               <cite><a href="#!">Said no one, ever.</a></cite>
             </blockquote>
           </div>
-          <footer>
-            <p><a href="#top">[Top]</a></p>
-          </footer>
         </article>
 
         <article id="text__lists">
@@ -138,9 +130,6 @@
               <li>List Item 3</li>
             </ul>
           </div>
-          <footer>
-            <p><a href="#top">[Top]</a></p>
-          </footer>
         </article>
 
         <article id="text__hr">
@@ -150,9 +139,6 @@
           <div>
             <hr>
           </div>
-          <footer>
-            <p><a href="#top">[Top]</a></p>
-          </footer>
         </article>
 
         <article id="text__inline">
@@ -167,35 +153,17 @@
             </p>
             <p>The <i>i element</i> is text that is offset from the normal text.</p>
           </div>
-          <footer>
-            <p><a href="#top">[Top]</a></p>
-          </footer>
         </article>
 
       </section>
 
       <section id="embedded">
         <header>
-          <h1>Embedded content</h1>
+          <h1>Image</h1>
         </header>
-        <article id="embedded__images">
-          <header>
-            <h2>Images</h2>
-          </header>
           <div>
-            <h3>No <code>&lt;figure&gt;</code> element</h3>
-            <p><img src="http://placekitten.com/480/480" alt="Image alt text"></p>
-            <h3>Wrapped in a <code>&lt;figure&gt;</code> element, no <code>&lt;figcaption&gt;</code></h3>
-            <figure><img src="http://placekitten.com/420/420" alt="Image alt text"></figure>
-            <h3>Wrapped in a <code>&lt;figure&gt;</code> element, with a <code>&lt;figcaption&gt;</code></h3>
-            <figure>
-              <img src="http://placekitten.com/420/420" alt="Image alt text">
-              <figcaption>Here is a caption for this image.</figcaption>
-            </figure>
+            <img src="http://placekitten.com/480/480" alt="Image alt text">
           </div>
-          <footer>
-            <p><a href="#top">[Top]</a></p>
-          </footer>
         </article>
       </section>
 
@@ -214,36 +182,8 @@
               <label for="input__password">Password</label>
               <input id="input__password" type="password" placeholder="Type your Password">
             </p>
-            <p>
-              <label for="input__webaddress">Web Address</label>
-              <input id="input__webaddress" type="url" placeholder="http://yoursite.com">
-            </p>
-            <p>
-              <label for="input__emailaddress">Email Address</label>
-              <input id="input__emailaddress" type="email" placeholder="name@email.com">
-            </p>
-            <p>
-              <label for="input__phone">Phone Number</label>
-              <input id="input__phone" type="tel" placeholder="(999) 999-9999">
-            </p>
-            <p>
-              <label for="input__search">Search</label>
-              <input id="input__search" type="search" placeholder="Enter Search Term">
-            </p>
-            <p>
-              <label for="input__text2">Number Input</label>
-              <input id="input__text2" type="number" placeholder="Enter a Number">
-            </p>
-            <p>
-              <label for="input__text3" class="error">Error</label>
-              <input id="input__text3" class="is-error" type="text" placeholder="Text Input">
-            </p>
-            <p>
-              <label for="input__text4" class="valid">Valid</label>
-              <input id="input__text4" class="is-valid" type="text" placeholder="Text Input">
-            </p>
           </fieldset>
-          <p><a href="#top">[Top]</a></p>
+
           <fieldset id="forms__select">
             <legend>Select menus</legend>
             <p>
@@ -257,7 +197,7 @@
               </select>
             </p>
           </fieldset>
-          <p><a href="#top">[Top]</a></p>
+
           <fieldset id="forms__checkbox">
             <legend>Checkboxes</legend>
             <ul class="list list--bare">
@@ -267,7 +207,7 @@
               <li><label for="checkbox3"><input id="checkbox3" name="checkbox" type="checkbox"> Choice C</label></li>
             </ul>
           </fieldset>
-          <p><a href="#top">[Top]</a></p>
+
           <fieldset id="forms__radio">
             <legend>Radio buttons</legend>
             <ul class="list list--bare">
@@ -277,7 +217,7 @@
               <li><label for="radio3"><input id="radio3" name="radio" type="radio" class="radio"> Option 3</label></li>
             </ul>
           </fieldset>
-          <p><a href="#top">[Top]</a></p>
+
           <fieldset id="forms__textareas">
             <legend>Textareas</legend>
             <p>
@@ -285,63 +225,25 @@
               <textarea id="textarea" rows="8" cols="48" placeholder="Enter your message here"></textarea>
             </p>
           </fieldset>
-          <p><a href="#top">[Top]</a></p>
-          <fieldset id="forms__html5">
-            <legend>HTML5 inputs</legend>
-            <p>
-              <label for="ic">Color input</label>
-              <input type="color" id="ic" value="#000000">
-            </p>
-            <p>
-              <label for="in">Number input</label>
-              <input type="number" id="in" min="0" max="10" value="5">
-            </p>
-            <p>
-              <label for="ir">Range input</label>
-              <input type="range" id="ir">
-            </p>
-            <p>
-              <label for="idd">Date input</label>
-              <input type="date" id="idd" value="1970-01-01">
-            </p>
-            <p>
-              <label for="idm">Month input</label>
-              <input type="month" id="idm" value="1970-01">
-            </p>
-            <p>
-              <label for="idw">Week input</label>
-              <input type="week" id="idw" value="1970-W01">
-            </p>
-            <p>
-              <label for="idt">Datetime input</label>
-              <input type="datetime" id="idt" value="1970-01-01T00:00:00Z">
-            </p>
-            <p>
-              <label for="idtl">Datetime-local input</label>
-              <input type="datetime-local" id="idtl" value="1970-01-01T00:00">
-            </p>
-          </fieldset>
-          <p><a href="#top">[Top]</a></p>
+
           <fieldset id="forms__action">
             <legend>Action buttons</legend>
             <p>
-              <input type="submit" value="<input type=submit>">
-              <input type="button" value="<input type=button>">
-              <input type="reset" value="<input type=reset>">
-              <input type="submit" value="<input disabled>" disabled>
+              <input type="submit" value="Submit">
+              <input type="submit" value="Disabled" disabled>
             </p>
             <p>
-              <button type="submit">&lt;button type=submit&gt;</button>
-              <button type="button">&lt;button type=button&gt;</button>
-              <button type="reset">&lt;button type=reset&gt;</button>
-              <button type="button" disabled>&lt;button disabled&gt;</button>
+              <button type="submit">Submit</button>
+              <button type="button" disabled>Disabled</button>
+              <button type="submit"><i class="fas fa-user"></i>Submit</button>
             </p>
           </fieldset>
-          <p><a href="#top">[Top]</a></p>
         </form>
       </section>
     </main>
-
+    <footer>
+      <p><a href="#top">[Top]</a></p>
+    </footer>
   </div>
 </body>
 

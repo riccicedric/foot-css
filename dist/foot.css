@@ -1,15 +1,15 @@
-/*=========================================================
+/*==================================================================
   foot.css v0.0.1
-  (c) 2020 Cédric Ricci | https://riccicedricdesign.com
+  Copyright (c) 2020 Cédric Ricci | https://riccicedricdesign.com
   MIT License | https://github.com/riccicedric/foot-css
-=========================================================*/
+==================================================================*/
 
 /*=============================
   Color Variables
 =============================*/
 :root {
-    --foot-primary-color: #2D3748;
-    --foot-secondary-color: #FFFFFF;
+    --foot-primary-color: #434190;
+    --foot-secondary-color: #EBF4FF;
 }
 
 /*=============================
@@ -29,6 +29,31 @@ body {
     line-height: 1.6;
     font-size: var(--foot-font-size);
     font-family: var(--foot-font-family);
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container.foot-container-xl {
+    max-width: 1296px;
+}
+
+.container.foot-container-lg {
+    max-width: 976px;
+}
+
+.container.foot-container-md {
+    max-width: 856px;
+}
+
+.container.foot-container-sm {
+    max-width: 616px;
+}
+
+.container.foot-container-xs {
+    max-width: 496px;
 }
 
 h1,
@@ -80,39 +105,40 @@ a:hover:not(.button) {
 
 blockquote,
 pre {
-    border-left: 2px solid var(--foot-grey-mid);
+    border-left: 4px solid var(--foot-grey-mid);
+    background-color: var(--foot-grey-light);
 }
 
 blockquote {
     background-color: var(--foot-grey-light);
     padding: 1.5rem 2rem;
-}
-
-code {
-    font-family: monaco, "Consolas", "Lucida Console", monospace;
-    white-space: pre-wrap;
-    color: var(--foot-grey-light);
+    margin-inline-end: 0;   
 }
 
 pre {
     font-size: 1em;
     overflow-x: auto;
-    margin: 1.5rem 2rem;
-    padding: 1.5em 0 0 0;
-    background-color: var(--foot-grey-dark);
+    margin: 1.5rem 0 1.5em 1.5em;
+    padding: 1.5em 0 0;
+}
+
+code {
+    font-family: monaco, "Consolas", "Lucida Console", monospace;
+    white-space: pre-wrap;
+    margin-left: -5rem;
 }
 
 ul,
 ol {
     margin-top: 0;
-    margin-bottom: 16px;
+    margin-bottom: 0.8rem;
     padding-left: 0;
     list-style-position: inside;
 }
 
 ul li,
 ol li {
-    margin-bottom: 16px;
+    margin-bottom: 0.8rem;
 }
 
 ul li:last-child,
@@ -124,7 +150,7 @@ ul ul,
 ol ul,
 ul ol,
 ol ol {
-    margin-left: 16px;
+    margin-left: 1rem;
 }
 
 dl dt {
@@ -137,8 +163,9 @@ hr {
 }
 
 img {
-    margin-top: 0;
-    margin-bottom: 16px;
+    display: block;
+    height: auto;
+    max-width: 100%;
 }
 
 .nav {
@@ -147,8 +174,8 @@ img {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    padding-top: 16px;
-    padding-bottom: 16px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 .nav img {
@@ -156,7 +183,7 @@ img {
 }
 
 .nav .nav-item {
-    margin-right: 16px;
+    margin-right: 1rem;
 }
 
 .nav .nav-item:last-child {
@@ -171,7 +198,8 @@ img {
 }
 
 fieldset {
-    padding: 0.5rem 2rem;
+    margin-bottom: 1rem;
+    padding: 1rem 2rem;
     border: 1px solid var(--foot-grey-mid);
     -moz-border-radius: 4px;
     -webkit-border-radius: 4px;
@@ -217,12 +245,12 @@ textarea[type="text"]:focus {
     box-shadow: 0 0 1px var(--foot-grey-dark);
 }
 
-input.error:not([type="checkbox"]):not([type="range"]):not([type="radio"]):not([type="submit"]):not([type="color"]):not([type="button"]):not([type="reset"]),
+input.error:not([type="checkbox"]):not([type="radio"]):not([type="submit"]):not([type="color"]):not([type="button"]):not([type="reset"]),
 textarea.error {
     border-color: var(--foot-error-color);
 }
 
-input.success:not([type="checkbox"]):not([type="range"]):not([type="radio"]):not([type="submit"]):not([type="color"]):not([type="button"]):not([type="reset"]),
+input.success:not([type="checkbox"]):not([type="radio"]):not([type="submit"]):not([type="color"]):not([type="button"]):not([type="reset"]),
 textarea.success {
     border-color: var(--foot-success-color);
 }
@@ -240,14 +268,16 @@ select {
 [type="radio"] {
     width: 1.6rem;
     height: 1.6rem;
+    display: table-cell;
+    vertical-align: middle;
+    margin-top: -1px;
 }
 
-[type="range"] {
-    border-radius: 4px;
-    border: 1px solid var(--foot-grey-mid);
-    font-size: 1em;
-    display: block;
+input[type=range] {
     width: 100%;
+    background: var(--foot-grey-light);
+    border: 1px solid var(--foot-grey-mid);
+    border-radius: 4px;
 }
 
 .button,
@@ -267,8 +297,8 @@ button {
     -webkit-transition: opacity 0.2s ease;
     transition: opacity 0.2s ease;
     text-decoration: none;
-    -webkit-transform: scale(1);
     transform: scale(1);
+    -webkit-transform: scale(1); 
     display: inline-block;
     cursor: pointer;
     outline: transparent;
@@ -279,7 +309,7 @@ button {
 [type="reset"]:hover,
 [type="submit"]:hover,
 button:hover {
-    opacity: 0.8;
+    opacity: 0.9;
 }
 
 .button:active,
@@ -296,7 +326,7 @@ input:disabled,
 button:disabled,
 input:disabled:hover,
 button:disabled:hover {
-    opacity: 0.4;
+    opacity: 0.3;
     cursor: not-allowed;
 }
 
@@ -317,21 +347,9 @@ button:disabled:hover {
     color: var(--foot-grey-dark);
 }
 
-.button.icon {
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-}
-
-.button.icon>img {
-    margin-left: 2px;
-}
-
-.button.icon-only {
-    padding: 1rem;
+.button svg,
+button svg {
+    margin-right: 0.5rem;
 }
 
 /*=============================
@@ -414,7 +432,7 @@ button:disabled:hover {
     flex-direction: row;
 }
 
-.footer-centered {
+.foot-centered {
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -424,28 +442,49 @@ button:disabled:hover {
   Media Queries
 =============================*/
 
-@media screen and (max-width: 599px) {
+@media screen and (max-width: 480px) {
     .foot-xs-hide {
         display: none !important;
     }
+    .foot-xs-show {
+        display: block !important;
+    }    
 }
 
-@media screen and (min-width: 600px) and (max-width: 899px) {
+@media screen and (max-width: 600px) {
     .foot-sm-hide {
         display: none !important;
     }
+    .foot-sm-show {
+        display: block !important;
+    }     
 }
 
-@media screen and (min-width: 900px) and (max-width: 1199px) {
+@media screen and (max-width: 840px) {
     .foot-md-hide {
         display: none !important;
     }
+    .foot-md-show {
+        display: block !important;
+    }     
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (max-width: 960px) {
     .foot-lg-hide {
         display: none !important;
     }
+    .foot-lg-show {
+        display: block !important;
+    }     
+}
+
+@media screen and (max-width: 1280px) {
+    .foot-xl-hide {
+        display: none !important;
+    }
+    .foot-xl-show {
+        display: block !important;
+    }     
 }
 
 /*=============================
@@ -453,12 +492,12 @@ button:disabled:hover {
 =============================*/
 
 :root {
-    --foot-grey-light: #F7F7F7;
-    --foot-grey-mid: #CDCDCD;
-    --foot-grey-dark: #111111;
+    --foot-grey-light: #F7FAFC;
+    --foot-grey-mid: #A0AEC0;
+    --foot-grey-dark: #1A202C;
     --foot-link-color: #007AA6;
-    --foot-error-color: #C7162B;
-    --foot-success-color: #0E8420;
+    --foot-error-color: #E53E3E;
+    --foot-success-color: #48BB78;
     --foot-font-size: 1rem;
     --foot-font-family: "Roboto", "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", -apple-system, system-ui, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
 }
