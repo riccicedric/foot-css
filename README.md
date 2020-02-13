@@ -14,4 +14,4 @@ Minimalist CSS framework
 ## License
 
 **foot.css** is an open-source framework and is licensed under the [MIT License]\
-Designed and built with ♥ by [Cédric Ricci](https://riccicedricdesign.com)
+Designed & maintained with ♥ by [Cédric Ricci](https://riccicedricdesign.com)
