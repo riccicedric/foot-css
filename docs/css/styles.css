@@ -1,0 +1,30 @@
+nav a {
+    font-size: 0.9em;
+    font-weight: 500;
+}
+
+header {
+    height: 90vh;
+    background: #f7fafc;
+}
+
+header h1 {
+    font-size: 3.5em;
+    font-weight: 300;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.2em;
+    font-weight: 300;
+}
+
+footer p {
+    font-size: 0.9em;
+    font-weight: 400;    
+}
+
+footer p span {
+    color: red;
+    font-size: 1.2em;    
+}
