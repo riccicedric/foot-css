@@ -19,7 +19,7 @@ Minimalist CSS framework, easy to use and extend, foot.css help you start your w
 $ npm i footcss
 ```
 
-**CDN install, juste add the tag bellow to your project head**
+**CDN install, just add the tag bellow to your project head**
 
 ```html
 <link rel="stylesheet" href="https://unpkg.com/footcss"/>
