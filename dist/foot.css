@@ -719,7 +719,7 @@ button svg {
     }
 
     .foot-row {
-        display: block;
+        display: block !important;
         margin-left: 0;
         margin-right: 0;
     }
