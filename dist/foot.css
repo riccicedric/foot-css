@@ -618,71 +618,10 @@ button svg {
     flex-grow: 1;
 }
 
-.foot-col,
-[class^='col-'],
-[class*=" col-"] {
+.foot-col {
     margin-left: 2rem;
 }
 
-.foot-col-1 {
-    flex: 0 0 calc((100% / (12/1)) - 2rem);
-    max-width: calc((100% / (12/1)) - 2rem);
-}
-
-.foot-col-2 {
-    flex: 0 0 calc((100% / (12/2)) - 2rem);
-    max-width: calc((100% / (12/2)) - 2rem);
-}
-
-.foot-col-3 {
-    flex: 0 0 calc((100% / (12/3)) - 2rem);
-    max-width: calc((100% / (12/3)) - 2rem);
-}
-
-.foot-col-4 {
-    flex: 0 0 calc((100% / (12/4)) - 2rem);
-    max-width: calc((100% / (12/4)) - 2rem);
-}
-
-.foot-col-5 {
-    flex: 0 0 calc((100% / (12/5)) - 2rem);
-    max-width: calc((100% / (12/5)) - 2rem);
-}
-
-.foot-col-6 {
-    flex: 0 0 calc((100% / (12/6)) - 2rem);
-    max-width: calc((100% / (12/6)) - 2rem);
-}
-
-.foot-col-7 {
-    flex: 0 0 calc((100% / (12/7)) - 2rem);
-    max-width: calc((100% / (12/7)) - 2rem);
-}
-
-.foot-col-8 {
-    flex: 0 0 calc((100% / (12/8)) - 2rem);
-    max-width: calc((100% / (12/8)) - 2rem);
-}
-
-.foot-col-9 {
-    flex: 0 0 calc((100% / (12/9)) - 2rem);
-    max-width: calc((100% / (12/9)) - 2rem);
-}
-
-.foot-col-10 {
-    flex: 0 0 calc((100% / (12/10)) - 2rem);
-    max-width: calc((100% / (12/10)) - 2rem);
-}
-
-.foot-col-11 {
-    flex: 0 0 calc((100% / (12/11)) - 2rem);
-    max-width: calc((100% / (12/11)) - 2rem);
-}
-
-.foot-col-12 {
-    flex: 0 0 calc((100% / (12/12)) - 2rem);
-    max-width: calc((100% / (12/12)) - 2rem);
-}
 
 /*=============================
   Media Queries
@@ -724,9 +663,7 @@ button svg {
         margin-right: 0;
     }
 
-    .foot-col,
-    [class*="col-"],
-    [class^='col-'] {
+    .foot-col {
         max-width: 100%;
         margin-left: 0;
         margin-bottom: 1rem;
