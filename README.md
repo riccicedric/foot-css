@@ -6,10 +6,30 @@
 
 <h1 align="center">foot.css</h1>
 
-<p align="center">Minimalist CSS framework</p>
+<p align="center">Small footprint CSS framework</p>
 
 # foot.css
-Minimalist CSS framework
+Minimalist CSS framework, easy to use and extend, foot.css help you start your website & app project on the right foot :)
+
+## Installation
+
+**npm install**
+
+```sh
+$ npm i footcss
+```
+
+**Add tag to your head**
+
+```html
+<link rel="stylesheet" href="https://unpkg.com/footcss"/>
+```
+
+## [Documentation](https://riccicedric.github.io/foot-css/)
+
+## Find a bug?
+
+Please report it in the [issues](https://github.com/riccicedric/foot-css/issues)
 
 ## License
 
