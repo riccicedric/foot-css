@@ -34,9 +34,9 @@ body {
 }
 
 .container {
-    width: 96%;
+    width: 100%;
     margin: 0 auto;
-    padding: 0 calc(2em / 2);
+    padding: 0 1em;
 }
 
 .container.foot-container-xl {
@@ -131,27 +131,31 @@ blockquote *:last-child {
     margin-bottom: 0;
 }
 
-code {
-    font-family: monaco, "Consolas", "Lucida Console", monospace;
-    background: var(--foot-grey-light);
-    border-radius: var(--foot-radius);
-    font-size: 86%;
-    margin: 0 .25rem;
-    padding: .25rem .5rem;
-    white-space: nowrap;
-}
-
 pre {
     background: var(--foot-grey-light);
-    border-left: 0.25rem solid var(--foot-primary-color);
-    overflow-y: hidden;
+    color: var(--foot-grey-dark);
+    display: block;
+    font-family: monaco, "Consolas", "Lucida Console", monospace;
+    font-size: 1em;
+    margin: 1rem 0;
+    padding: 1rem;
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+    border-radius: var(--foot-radius);
 }
 
-pre>code {
-    display: block;
-    border-radius: 0;
-    padding: 1rem 1.5rem;
-    white-space: pre-wrap;
+code {
+    background: var(--foot-grey-light);
+    color: var(--foot-grey-dark);
+    font-family: monaco, "Consolas", "Lucida Console", monospace;
+    font-size: 1em;
+    line-height: inherit;
+    margin: 0;
+    border-radius: var(--foot-radius);
+    padding: 0.25rem 0.5rem;
+    vertical-align: baseline;
+    word-break: break-all;
+    word-wrap: break-word;
 }
 
 ul,
@@ -604,24 +608,26 @@ button svg {
 
 .foot-row {
     display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    width: 100%;
-    margin-bottom: 1rem;
-}
-
-.foot-row> :first-child {
-    margin-left: 0;
+    flex-direction: row;
 }
 
 .foot-row .foot-col {
-    flex-grow: 1;
+    display: block;
+    flex: 1 1 auto;
+    width: 100%;
+    max-width: 100%;
+    margin-left: 0;
+    margin-bottom: 1rem;
+    padding: 0 1rem;
 }
 
-.foot-col {
-    margin-left: 2rem;
+.foot-row .foot-col:first-child {
+    padding-left: initial;
 }
 
+.foot-row .foot-col:last-child {
+    padding-right: initial;
+}
 
 /*=============================
   Media Queries
@@ -676,19 +682,18 @@ button svg {
     }
 
     .foot-row {
-        display: block !important;
+        flex-direction: column;
+        width: 100%;
         margin-left: 0;
-        margin-right: 0;
+        padding: 0;
     }
 
-    .foot-col {
-        max-width: 100%;
-        margin-left: 0;
+    .foot-row .foot-col {
+        padding: 0;
+    }
+
+    .foot-row .foot-col:last-child {
         margin-bottom: 1rem;
-    }
-
-    .foot-col:last-of-type {
-        margin-bottom: 0;
     }
 
 }
@@ -718,7 +723,7 @@ button svg {
 =============================*/
 
 :root {
-    --foot-grey-light: #F7FAFC;
+    --foot-grey-light: #f7f7f9;
     --foot-grey-mid: #A0AEC0;
     --foot-grey-dark: #1A202C;
     --foot-error-color: #E53E3E;
