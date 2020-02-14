@@ -1,0 +1,37 @@
+{
+    "name": "footcss",
+    "filename": "foot.min.css",
+    "version": "0.0.2",
+    "description": "Minimalist CSS framework",
+    "main": "./dist/foot.min.css",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/riccicedric/foot-css.git"
+    },
+    "keywords": [
+        "css",
+        "flexbox",
+        "responsive",
+        "framework"
+      ],
+    "author": "Cédric Ricci",
+    "license": "MIT",
+    "bugs": {
+      "url": "https://github.com/riccicedric/foot-css/issues"
+    },
+    "homepage": "https://riccicedricdesign.com",
+    "autoupdate": {
+      "source": "git",
+      "target": "git://github.com/riccicedric/foot-css.git",
+      "basePath": "dist",
+      "files": [
+        "foot.min.css",
+        "foot.css"
+      ]
+    },
+    "devDependencies": {
+    }
+  }
