@@ -610,7 +610,7 @@ button svg {
     margin-bottom: 1rem;
 }
 
-.foot-row > :first-child {
+.foot-row> :first-child {
     margin-left: 0;
 }
 
@@ -628,6 +628,24 @@ button svg {
 =============================*/
 
 @media screen and (max-width: 480px) {
+    h1 {
+        font-size: 10vw;
+    }
+
+    h2 {
+        font-size: 9vw;
+    }
+
+    h3 {
+        font-size: 8vw;
+    }
+
+    h4,
+    h5,
+    h6 {
+        font-size: 7vw;
+    }
+
     .foot-xs-hide {
         display: none !important;
     }
