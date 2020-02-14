@@ -719,6 +719,7 @@ button svg {
     }
 
     .foot-row {
+        display: block;
         margin-left: 0;
         margin-right: 0;
     }
@@ -726,10 +727,8 @@ button svg {
     .foot-col,
     [class*="col-"],
     [class^='col-'] {
-        flex: 100%;
         max-width: 100%;
         margin-left: 0;
-        margin-right: 0;
         margin-bottom: 1rem;
     }
 
