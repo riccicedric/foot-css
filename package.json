@@ -22,7 +22,7 @@
     "bugs": {
       "url": "https://github.com/riccicedric/foot-css/issues"
     },
-    "homepage": "https://riccicedricdesign.com",
+    "homepage": "https://riccicedric.github.io/foot-css/",
     "autoupdate": {
       "source": "git",
       "target": "git://github.com/riccicedric/foot-css.git",
