@@ -10,34 +10,35 @@
 </head>
 <body>
     <div class="container foot-container-md">
+
         <nav class="nav foot-flex-justify-center foot-flex-align-center">
             <a class="nav-item" href="index.html">Home</a>
             <a class="nav-item" href="docs.html">Docs</a>            
             <a class="nav-item" href="https://github.com/riccicedric/foot-css">Github</a>
         </nav>
+
         <div class="title foot-mb-2">
             <h1 class="foot-primary-color">Documentation</h1>
         </div>
 
-        <!-- Installation Section -->
+        <!-- Getting Started Section -->
         <h3 class="foot-pb-1" id="installation">Getting Started</h3>
-        <div class="foot-row foot-pb-2">
-            <div class="foot-col">
+        
+        <div class="foot-pb-2">
                 <p><strong>foot.css</strong> is available via <code>CDN</code> you just need to add this tag in your project head.</p> 
                 <pre><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;https://unpkg.com/footcss&quot;&gt;</code></pre>
                 <p><strong>foot.css</strong> is also available using <code>npm</code> to install it directly into your project.</p> 
                 <pre><code>$ npm i footcss</code></pre>
-            </div>
         </div>
 
         <!-- Components Section -->
         <h3 class="foot-pb-1" id="installation">Components</h3>
-        <div class="foot-row foot-pb-2">
-            <!-- Simple Grid System -->
-            <div>
+
+        <!-- Simple Grid System -->
+            <div class="foot-pb-1">
                 <h5 class="foot-pb-1" id="installation">Simple Grid System</h3>
-                <p><strong>foot.css</strong> give you access to a fluid 12 columns grid system, that resize with the viewport. Wrap your content in a <code>.container</code> to center it on the page.</p>  
-                <div class="foot-row">
+                <p><strong>foot.css</strong> provides you a fluid grid system that resize with the viewport. Wrap your content in a <code>.container</code> to center it on the page.</p>  
+                <div class="foot-row foot-pt-1">
                     <div class="foot-col"><span class="colCard">.foot-col</span></div>
                     <div class="foot-col"><span class="colCard">.foot-col</span></div>
                     <div class="foot-col"><span class="colCard">.foot-col</span></div>
@@ -45,18 +46,33 @@
                 <div class="foot-row">
                     <div class="foot-col"><span class="colCard">.foot-col</span></div>
                 </div>
-                <pre class="language-markup"><code><script type="text/plain" class="language-html"> 
-    <div class="foot-row">
-        <div class="foot-col"> .foot-col </div>
-        <div class="foot-col"> .foot-col </div>
-        <div class="foot-col"> .foot-col </div>
-    </div>
-    <div class="foot-row">
-        <div class="foot-col"> .foot-col </div>
-    </div>                    
-                </script></code></pre> 
+                <pre><code>
+    &lt;div class=&quot;foot-row&quot;&gt;
+        &lt;div class=&quot;foot-col&quot;&gt; .foot-col &lt;/div&gt;
+        &lt;div class=&quot;foot-col&quot;&gt; .foot-col &lt;/div&gt;
+        &lt;div class=&quot;foot-col&quot;&gt; .foot-col &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;foot-row&quot;&gt;
+        &lt;div class=&quot;foot-col&quot;&gt; .foot-col &lt;/div&gt;
+    &lt;/div&gt;                   
+                </code></pre> 
             </div>
-        </div>        
+        
+        <!-- Buttons -->
+        <div class="foot-pb-1">
+             <h5 class="foot-pb-1" id="installation">Buttons</h3>
+            <p><strong>foot.css</strong> includes predefined button styles, with a distinctive look. The buttons support icons as well with the help of the <a href="https://fontawesome.com/start" target="_blank"><b>Font Awesome</b></a> library, that you will need to add to your document head.</p>
+            <p class="foot-pt-1"><a class="button">Button</a></p>
+            <pre><code>&lt;a class=&quot;button&quot;&gt;Button&lt;/a&gt;</code></pre>
+            <p><a class="button outline">Outline</a></p>
+            <pre><code>&lt;a class=&quot;button outline&quot;&gt;Outline&lt;/a&gt;</code></pre>
+            <p><a class="button outline dark">Outline dark</a></p>
+            <pre><code>&lt;a class=&quot;button outline dark&quot;&gt;Outline dark&lt;/a&gt;</code></pre>
+            <p><a class="button outline light">Outline light</a></p>
+            <pre><code>&lt;a class=&quot;button outline light&quot;&gt;Outline light&lt;/a&gt;</code></pre>
+            <p><a class="button"><i class="fas fa-user"></i>Button with icon</a></p>
+            <pre><code>&lt;a class=&quot;button&quot;&gt;&lt;i class=&quot;fas fa-user&quot;&gt;&lt;/i&gt;Button with icon&lt;/a&gt;</code></pre>
+        </div>
         
         <footer class="foot-container-md foot-py-2">
             <p>Made with <span>♥</span> by <a href="https://riccicedricdesign.com"><strong>Cédric Ricci</strong></a></p>
