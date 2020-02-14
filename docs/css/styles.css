@@ -2,6 +2,12 @@ nav a {
     font-size: 0.9em;
     font-weight: 500;
 }
+@media screen and (max-width: 480px) {
+    .nav .nav-item {
+        padding: 0.8rem 0.5rem;
+        font-size: 84%;
+    }
+}
 
 header {
     height: 90vh;

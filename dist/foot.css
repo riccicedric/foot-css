@@ -1,5 +1,5 @@
 /*==================================================================
-  foot.css v0.0.1
+  foot.css v0.0.2
   Copyright (c) 2020 Cédric Ricci | https://riccicedricdesign.com
   MIT License | https://github.com/riccicedric/foot-css
 ==================================================================*/
@@ -10,11 +10,12 @@
 :root {
     --foot-primary-color: #434190;
     --foot-secondary-color: #EBF4FF;
-    --foot-link-color: #4c51bf;   
+    --foot-link-color: #606c76;
+    --foot-radius: 0.25rem;
 }
 
 /*=============================
-  Styles
+  foot.css
 =============================*/
 * {
     box-sizing: border-box;
@@ -27,9 +28,9 @@ body {
 }
 
 body {
+    font-size: 1rem;   
     line-height: 1.6;
-    font-size: var(--foot-font-size);
-    font-family: var(--foot-font-family);
+    font-family: "Roboto", "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", -apple-system, system-ui, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
 }
 
 .container {
@@ -111,29 +112,45 @@ a:hover:not(.button) {
     opacity: 0.75;
 }
 
-blockquote,
-pre {
-    border-left: 4px solid var(--foot-grey-mid);
-    background-color: var(--foot-grey-light);
-}
-
 blockquote {
-    background-color: var(--foot-grey-light);
-    padding: 1.5rem 2rem;
-    margin-inline-end: 0;
+    border-left: 0.25rem solid var(--foot-grey-mid);
+    background: var(--foot-grey-light);
+    font-style: italic;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 1rem 1.5rem;
 }
 
-pre {
-    font-size: 1em;
-    overflow-x: auto;
-    margin: 1.5rem 0 1.5em 1.5em;
-    padding: 1.5em 0 0;
+blockquote cite {
+    font-style: normal;
+    font-weight: 500;
+}
+
+blockquote *:last-child {
+    margin-bottom: 0;
 }
 
 code {
     font-family: monaco, "Consolas", "Lucida Console", monospace;
+    background: var(--foot-grey-light);
+    border-radius: var(--foot-radius);
+    font-size: 86%;
+    margin: 0 .25rem;
+    padding: .25rem .5rem;
+    white-space: nowrap;
+}
+
+pre {
+    background: var(--foot-grey-light);
+    border-left: 0.25rem solid var(--foot-primary-color);
+    overflow-y: hidden;
+}
+
+pre>code {
+    display: block;
+    border-radius: 0;
+    padding: 1rem 1.5rem;
     white-space: pre-wrap;
-    margin-left: -5rem;
 }
 
 ul,
@@ -186,6 +203,7 @@ img {
 
 .nav img {
     max-height: 3rem;
+    height: fit-content;
 }
 
 .nav .nav-item {
@@ -197,19 +215,19 @@ img {
 }
 
 .nav-logo {
-    font-weight: bolder;
+    color: var(--foot-primary-color);
+    font-weight: 700;
     font-size: 2rem;
-    line-height: 0;
+    line-height: inherit;
     padding-right: 2rem;
+    margin: 0;
 }
 
 fieldset {
     margin-bottom: 1rem;
     padding: 1rem 2rem;
     border: 1px solid var(--foot-grey-mid);
-    -moz-border-radius: 4px;
-    -webkit-border-radius: 4px;
-    border-radius: 4px;
+    border-radius: var(--foot-radius);
 }
 
 legend {
@@ -223,15 +241,14 @@ input:not([type="checkbox"]):not([type="range"]):not([type="radio"]):not([type="
 select,
 textarea,
 textarea[type="text"] {
+    display: block;
+    width: 100%;  
     font-family: inherit;
     padding: 0.8rem 1rem;
-    border-radius: 4px;
+    border-radius: var(--foot-radius);
     border: 1px solid var(--foot-grey-mid);
     font-size: 1em;
-    -webkit-transition: all 0.2s ease;
     transition: all 0.2s ease;
-    display: block;
-    width: 100%;
 }
 
 input:not([type="checkbox"]):not([type="range"]):not([type="radio"]):not([type="submit"]):not([type="color"]):not([type="button"]):not([type="reset"]):not(:disabled):hover,
@@ -247,7 +264,6 @@ textarea:focus,
 textarea[type="text"]:focus {
     outline: none;
     border-color: var(--foot-grey-mid);
-    -webkit-box-shadow: 0 0 1px var(--foot-grey-dark);
     box-shadow: 0 0 1px var(--foot-grey-dark);
 }
 
@@ -262,12 +278,12 @@ textarea.success {
 }
 
 select {
+    -webkit-appearance: none; 
     color: var(--foot-grey-dark);
     background: var(--foot-grey-light) no-repeat 100%;
     background-image: url("data:image/svg+xml,%3C?xml version='1.0' encoding='UTF-8' standalone='no'?%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg width='100%25' height='100%25' viewBox='0 0 8 8' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xml:space='preserve' xmlns:serif='http://www.serif.com/' style='fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;'%3E%3Cpath id='ion-arrow-down-b' d='M0.075,2.225c-0.05,-0.05 -0.075,-0.15 -0.075,-0.225c0,-0.225 0.2,-0.4 0.425,-0.4l7.15,0c0.225,0 0.425,0.175 0.425,0.4c0,0.075 -0.025,0.15 -0.075,0.2l-0.05,0.075l-3.4,3.9c-0.125,0.125 -0.275,0.225 -0.475,0.225c-0.2,0 -0.35,-0.1 -0.475,-0.225l-3.4,-3.9l-0.05,-0.05Z' style='fill-rule:nonzero;'/%3E%3C/svg%3E");
-    background-size: 1ex;
+    background-size: 8px;
     background-origin: content-box;
-    -webkit-appearance: none;
 }
 
 [type="checkbox"],
@@ -283,7 +299,7 @@ input[type=range] {
     width: 100%;
     background: var(--foot-grey-light);
     border: 1px solid var(--foot-grey-mid);
-    border-radius: 4px;
+    border-radius: var(--foot-radius);
 }
 
 .button,
@@ -294,7 +310,7 @@ button {
     padding: 1rem 2.5rem;
     color: var(--foot-secondary-color);
     background: var(--foot-primary-color);
-    border-radius: 4px;
+    border-radius: var(--foot-radius);
     border: 1px solid transparent;
     font-family: inherit;
     font-size: var(--foot-font-size);
@@ -582,7 +598,7 @@ button svg {
 
 
 /*=============================
-  Media Queries
+  Grid
 =============================*/
 
 .foot-row {
@@ -610,7 +626,6 @@ button svg {
 }
 
 .foot-col-2 {
-
     flex: 0 0 calc((100% / (12/2)) - 2rem);
     max-width: calc((100% / (12/2)) - 2rem);
 }
@@ -738,7 +753,7 @@ button svg {
 }
 
 /*=============================
-  Additionals Variables
+  Additionals Color Variables
 =============================*/
 
 :root {
@@ -747,6 +762,4 @@ button svg {
     --foot-grey-dark: #1A202C;
     --foot-error-color: #E53E3E;
     --foot-success-color: #48BB78;
-    --foot-font-size: 1rem;
-    --foot-font-family: "Roboto", "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", -apple-system, system-ui, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
 }
