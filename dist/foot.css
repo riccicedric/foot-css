@@ -11,7 +11,7 @@
     --foot-primary-color: #434190;
     --foot-secondary-color: #EBF4FF;
     --foot-link-color: #606c76;
-    --foot-radius: 0.25rem;
+    --foot-radius: .25rem;
 }
 
 /*=============================
@@ -66,7 +66,7 @@ h4,
 h5,
 h6 {
     color: #2d3748;
-    margin: 0.2em 0 0.5em 0;
+    margin: .2em 0 .5em 0;
 }
 
 h1 {
@@ -101,7 +101,7 @@ h6 {
 
 p {
     color: #4a5568;
-    margin: 0.2em 0 0.5em 0;
+    margin: .2em 0 .5em 0;
 }
 
 a {
@@ -110,11 +110,11 @@ a {
 }
 
 a:hover:not(.button) {
-    opacity: 0.75;
+    opacity: .75;
 }
 
 blockquote {
-    border-left: 0.25rem solid var(--foot-grey-mid);
+    border-left: .25rem solid var(--foot-grey-mid);
     background: var(--foot-grey-light);
     font-style: italic;
     margin-left: 0;
@@ -152,7 +152,7 @@ code {
     line-height: inherit;
     margin: 0;
     border-radius: var(--foot-radius);
-    padding: 0.25rem 0.5rem;
+    padding: .25rem .5rem;
     vertical-align: baseline;
     word-break: break-all;
     word-wrap: break-word;
@@ -161,14 +161,14 @@ code {
 ul,
 ol {
     margin-top: 0;
-    margin-bottom: 0.8rem;
+    margin-bottom: .8rem;
     padding-left: 0;
     list-style-position: inside;
 }
 
 ul li,
 ol li {
-    margin-bottom: 0.8rem;
+    margin-bottom: .8rem;
 }
 
 ul li:last-child,
@@ -188,7 +188,7 @@ dl dt {
 }
 
 hr {
-    border-width: 0.5px;
+    border-width: .5px;
     border-color: var(--foot-grey-mid);
 }
 
@@ -212,7 +212,7 @@ img {
 }
 
 .nav .nav-item {
-    padding: 0.8rem 1.5rem;
+    padding: .8rem 1.5rem;
 }
 
 .nav .nav-item:last-child {
@@ -236,10 +236,10 @@ fieldset {
 }
 
 legend {
-    padding: 0 0.8em;
+    padding: 0 .8em;
     text-transform: uppercase;
-    font-size: 0.8em;
-    letter-spacing: 0.1rem;
+    font-size: .8em;
+    letter-spacing: .1rem;
 }
 
 input:not([type="checkbox"]):not([type="range"]):not([type="radio"]):not([type="submit"]):not([type="color"]):not([type="button"]):not([type="reset"]),
@@ -249,11 +249,11 @@ textarea[type="text"] {
     display: block;
     width: 100%;
     font-family: inherit;
-    padding: 0.8rem 1rem;
+    padding: .8rem 1rem;
     border-radius: var(--foot-radius);
     border: 1px solid var(--foot-grey-mid);
     font-size: 1em;
-    transition: all 0.2s ease;
+    transition: all .2s ease;
 }
 
 input:not([type="checkbox"]):not([type="range"]):not([type="radio"]):not([type="submit"]):not([type="color"]):not([type="button"]):not([type="reset"]):not(:disabled):hover,
@@ -321,8 +321,8 @@ button {
     font-size: var(--foot-font-size);
     line-height: 1;
     text-align: center;
-    -webkit-transition: opacity 0.2s ease;
-    transition: opacity 0.2s ease;
+    -webkit-transition: opacity .2s ease;
+    transition: opacity .2s ease;
     text-decoration: none;
     transform: scale(1);
     -webkit-transform: scale(1);
@@ -336,7 +336,7 @@ button {
 [type="reset"]:hover,
 [type="submit"]:hover,
 button:hover {
-    opacity: 0.9;
+    opacity: .9;
 }
 
 .button:active,
@@ -344,8 +344,8 @@ button:hover {
 [type="reset"]:active,
 [type="submit"]:active,
 button:active {
-    -webkit-transform: scale(0.98);
-    transform: scale(0.98);
+    -webkit-transform: scale(.98);
+    transform: scale(.98);
     outline: transparent;
 }
 
@@ -353,7 +353,7 @@ input:disabled,
 button:disabled,
 input:disabled:hover,
 button:disabled:hover {
-    opacity: 0.3;
+    opacity: .3;
     cursor: not-allowed;
 }
 
@@ -376,7 +376,7 @@ button:disabled:hover {
 
 .button svg,
 button svg {
-    margin-right: 0.5rem;
+    margin-right: .5rem;
 }
 
 /*=============================
@@ -600,7 +600,6 @@ button svg {
 .foot-mr-2 {
     margin-right: 2rem;
 }
-
 
 /*=============================
   Grid
