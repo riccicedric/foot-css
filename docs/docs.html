@@ -2,7 +2,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>foot.css | Small footprint CSS framework | Home</title>
+    <title>foot.css | Small footprint CSS framework | Docs</title>
     <link rel="stylesheet" href="https://unpkg.com/footcss">
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.19.0/themes/prism.min.css" rel="stylesheet">
@@ -18,43 +18,48 @@
             <a class="nav-item" href="docs.html">Docs</a>            
             <a class="nav-item" href="https://github.com/riccicedric/foot-css">Github</a>
         </nav>
+        <div class="title foot-mb-2">
+            <h1 class="foot-primary-color">Documentation</h1>
+        </div>
 
-        <header class="foot-flex foot-flex-centered foot-flex-vertical-dir foot-mb-2">
-            <img src="img/foot-css.svg" width="160" height="160" alt="foot.css logo">
-            <h1 class="foot-primary-color">foot.css</h1>
-            <p class="foot-txt-center">Small footprint CSS framework</p>
-        </header>
-
-        <h3 class="foot-pb-1" id="features">FEATURES</h3>
+        <!-- Installation Section -->
+        <h3 class="foot-pb-1" id="installation">Getting Started</h3>
         <div class="foot-row foot-pb-2">
-
-            <div class="foot-col">
-                <h5 class="foot-primary-color">FRIENDLY</h5>
-                <p>Minimalist CSS framework, easy to use and extend, foot.css help you start your website & app project on the right foot :)</p>    
-            </div>
-          
-            <div class="foot-col">
-                <h5 class="foot-primary-color">EFFICIENT</h5>
-                <p>Easy to use, foot.css applies basic styles to the HTML and give you some handy utilities classes to play with.</p>     
-            </div>
-          
-            <div class="foot-col">
-                <h5 class="foot-primary-color">LIGHTWEIGHT</h5>
-                <p>foot.css is easy to add to your project and come packed with a lot of nice features, under a small footprint of <b>10kb.</b></p>                    
-            </div>
-          
-          </div>
-        <h3 class="foot-pb-1" id="installation">INSTALLATION</h3>
-        <div class="foot-row foot-pb-2">
-
             <div class="foot-col">
                 <p><strong>foot.css</strong> is available via <code>CDN</code> you just need to add this tag in your project head.</p> 
                 <pre class="language-markup"><code><script type="text/plain" class="language-html"><link rel="stylesheet" href="https://unpkg.com/footcss"></script></code></pre>
                 <p><strong>foot.css</strong> is also available using <code>npm</code> to install it directly into your project.</p> 
                 <pre><code>$ npm i footcss</code></pre>
             </div>
-
         </div>
+
+        <!-- Components Section -->
+        <h3 class="foot-pb-1" id="installation">Components</h3>
+        <div class="foot-row foot-pb-2">
+            <!-- Simple Grid System -->
+            <div>
+                <h5 class="foot-pb-1" id="installation">Simple Grid System</h3>
+                <p><strong>foot.css</strong> give you access to a fluid 12 columns grid system, that resize with the viewport. Wrap your content in a <code>.container</code> to center it on the page.</p>  
+                <div class="foot-row">
+                    <div class="foot-col"><span class="colCard">.foot-col</span></div>
+                    <div class="foot-col"><span class="colCard">.foot-col</span></div>
+                    <div class="foot-col"><span class="colCard">.foot-col</span></div>
+                </div>
+                <div class="foot-row">
+                    <div class="foot-col"><span class="colCard">.foot-col</span></div>
+                </div>
+                <pre class="language-markup"><code><script type="text/plain" class="language-html"> 
+    <div class="row">
+        <div class="col"> .col </div>
+        <div class="col"> .col </div>
+        <div class="col"> .col </div>
+    </div>
+    <div class="row">
+        <div class="col"> .col </div>
+    </div>                    
+                </script></code></pre> 
+            </div>
+        </div>        
         
         <footer class="foot-container-md foot-py-2">
             <p>Made with <span>♥</span> by <a href="https://riccicedricdesign.com"><strong>Cédric Ricci</strong></a></p>

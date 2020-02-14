@@ -10,6 +10,7 @@ nav a {
 }
 
 header {
+    border-radius: 1rem;
     height: 90vh;
     background: #f7fafc;
 }
@@ -33,4 +34,27 @@ footer p {
 footer p span {
     color: red;
     font-size: 1.2em;    
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f7fafc;
+    min-height: 20rem;
+    border-radius: 1rem;
+}
+
+.title h1 {
+    font-weight: 300;
+}
+
+.colCard {
+    display: block;
+    width: 100%;
+    line-height: 2.5em;
+    border-radius: 0.25rem;
+    color: #EBF4FF;
+    background: #434190;
+    text-align: center;
 }
