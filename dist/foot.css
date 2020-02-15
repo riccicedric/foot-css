@@ -1,5 +1,5 @@
 /*==================================================================
-  foot.css v0.0.8
+  foot.css v0.0.9
   Copyright (c) 2020 Cédric Ricci | https://riccicedricdesign.com
   MIT License | https://github.com/riccicedric/foot-css
 ==================================================================*/
@@ -10,7 +10,7 @@
 :root {
     --foot-primary-color: #434190;
     --foot-secondary-color: #EBF4FF;
-    --foot-link-color: #606c76;
+    --foot-link-color: #8e9041;
     --foot-radius: .25rem;
 }
 
@@ -69,39 +69,52 @@ h6 {
     margin: .2em 0 .5em 0;
 }
 
-h1 {
-    font-weight: 200;
-    font-size: 3.5em;
-}
-
-h2 {
-    font-weight: 200;
-    font-size: 3em;
-}
-
-h3 {
-    font-weight: 300;
-    font-size: 2.5em;
-}
-
+h1,
+h2,
+h3,
 h4 {
     font-weight: 300;
-    font-size: 2em;
 }
 
 h5 {
-    font-weight: 300;
-    font-size: 1.5em;
+    font-weight: 400;
 }
 
 h6 {
-    font-weight: 300;
-    font-size: 1em;
+    font-weight: 500;
+}
+
+h1 {
+    font-size: 3.5rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+
+    font-size: 2.5rem;
+}
+
+h4 {
+
+    font-size: 2rem;
+}
+
+h5 {
+
+    font-size: 1.75rem;
+}
+
+h6 {
+
+    font-size: 1.5rem;
 }
 
 p {
-    color: #4a5568;
-    margin: .2em 0 .5em 0;
+    color: var(--foot-grey-dark);
+    margin: .2rem 0 .5rem 0;
 }
 
 a {
@@ -112,6 +125,8 @@ a {
 a:hover:not(.button) {
     opacity: .75;
 }
+
+
 
 blockquote {
     border-left: .25rem solid var(--foot-grey-mid);
@@ -377,11 +392,54 @@ button:disabled:hover {
 .button svg,
 button svg {
     margin-right: .5rem;
+    max-height: .9rem;
+}
+
+/*=============================
+  Japanese Support
+=============================*/
+
+html:lang(ja),
+.foot-ja {
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans Japanese", Meiryo, "Yu Gothic Medium", sans-serif;
+}
+
+html:lang(ja) h1,
+h1.foot-ja ,
+html:lang(ja) h2,
+h2.foot-ja,
+html:lang(ja) h3,
+h3.foot-ja,
+html:lang(ja) h4,
+h4.foot-ja,
+html:lang(ja) h5,
+h5.foot-ja,
+html:lang(ja) h6,
+h6.foot-ja {
+    font-weight: bold; 
+}
+
+:lang(ja) ins,
+:lang(ja) u {
+  border-bottom: .5px solid;
+  text-decoration: none;
+}
+
+:lang(ja) s + del,
+:lang(ja) s + s,
+:lang(ja) u + ins,
+:lang(ja) u + u,
+:lang(ja) del + del,
+:lang(ja) del + s,
+:lang(ja) ins + ins,
+:lang(ja) ins + u {
+  margin-left: .2em;
 }
 
 /*=============================
   Utilities
 =============================*/
+
 .foot-pos-relative {
     position: relative;
 }

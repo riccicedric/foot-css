@@ -10,9 +10,23 @@ nav a {
 }
 
 header {
-    border-radius: 1rem;
-    height: 90vh;
-    background: #f7fafc;
+    border-radius: .25rem;
+    height: 80vh;
+}
+
+.titleContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px dotted rgba(67,65,144,.2);
+    padding: 2rem;
+    border-radius: .25rem;
+    width: 100%;
+}
+
+.titleContainer img {
+    padding-top: 1rem;
 }
 
 header h1 {
@@ -40,12 +54,19 @@ footer p span {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #f7fafc;
     min-height: 20rem;
-    border-radius: 1rem;
+    border-radius: .25rem;
+    height: 70vh;
 }
 
 .title h1 {
+    font-weight: 300;
+    padding: 0 2rem;
+    margin: 0;
+}
+
+.title p {
+    font-size: 1.2em;
     font-weight: 300;
 }
 
@@ -54,7 +75,39 @@ footer p span {
     width: 100%;
     line-height: 2.5em;
     border-radius: 0.25rem;
-    color: #EBF4FF;
-    background: #434190;
+    color: #eeeeee;
+    background: #2d3748;
     text-align: center;
+}
+
+code {
+    display: inline-block;
+}
+
+.typography h1,
+.typography h2,
+.typography h3,
+.typography h4,
+.typography h5,
+.typography h6 {
+    margin: 0;
+    padding: .5rem 0;
+    line-height: initial;
+}
+
+.typoSize {
+    font-size: 1rem;
+}
+
+.sectionTitleContainer {
+    border: 1px dotted rgba(67,65,144,.2);
+    padding: 0.5rem 1rem;
+    border-radius: .25rem;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.sectionTitleContainer h3 {
+    margin: 0;
+    padding: 0;
 }
