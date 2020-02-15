@@ -7,6 +7,9 @@
 <h1 align="center">foot.css</h1>
 
 <p align="center">Small footprint CSS framework</p>
+<p align="center">
+    img src="https://img.shields.io/badge/dynamic/json?label=version&query=version&url=https%3A%2F%2Fraw.githubusercontent.com%2Friccicedric%2Ffoot-css%2Fmaster%2Fpackage.json">
+</p>
 
 # foot.css
 Minimalist CSS framework, easy to use and extend, foot.css help you start your website & app project on the right foot :)
