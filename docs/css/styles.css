@@ -111,3 +111,6 @@ code {
     margin: 0;
     padding: 0;
 }
+.badges img {
+    padding: .25rem;
+}

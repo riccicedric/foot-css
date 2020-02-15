@@ -748,6 +748,10 @@ h6.foot-ja {
     .foot-xs-show {
         display: block !important;
     }
+
+    .foot-flex {
+        flex-direction: column;
+    }   
 }
 
 @media screen and (max-width: 600px) {
