@@ -1,5 +1,5 @@
 /*==================================================================
-  foot.css v0.1.2
+  foot.css v0.1.4
   Copyright (c) 2020 Cédric Ricci | https://riccicedricdesign.com
   MIT License | https://github.com/riccicedric/foot-css
 ==================================================================*/
@@ -33,29 +33,29 @@ body {
     font-family: "Roboto", "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", -apple-system, system-ui, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
 }
 
-.container {
+.foot-container {
     width: 100%;
     margin: 0 auto;
     padding: 0 1em;
 }
 
-.container.foot-container-xl {
+.foot-container.foot-xl {
     max-width: 1296px;
 }
 
-.container.foot-container-lg {
+.foot-container.foot-lg {
     max-width: 976px;
 }
 
-.container.foot-container-md {
+.foot-container.foot-md {
     max-width: 856px;
 }
 
-.container.foot-container-sm {
+.foot-container.foot-sm {
     max-width: 616px;
 }
 
-.container.foot-container-xs {
+.foot-container.foot-xs {
     max-width: 496px;
 }
 
@@ -213,7 +213,7 @@ img {
     max-width: 100%;
 }
 
-.nav {
+.foot-nav {
     position: relative;
     display: flex;
     flex-wrap: wrap;
@@ -221,26 +221,20 @@ img {
     padding-bottom: 1rem;
 }
 
-.nav img {
+.foot-nav img {
     max-height: 3rem;
     height: fit-content;
 }
 
-.nav .nav-item {
+.foot-nav .foot-nav-item {
     padding: .8rem 1.5rem;
 }
 
-.nav .nav-item:last-child {
-    margin-right: 0;
-}
-
-.nav-logo {
-    color: var(--foot-primary-color);
-    font-weight: 700;
-    font-size: 2rem;
-    line-height: inherit;
-    padding-right: 2rem;
+.foot-nav-logo {
     margin: 0;
+    padding: 0 1.5rem;
+    font-size: 1.75rem;
+    font-weight: bold;
 }
 
 legend {
@@ -331,7 +325,7 @@ input[type=range] {
     border-radius: var(--foot-radius);
 }
 
-.button,
+.foot-button,
 [type="button"],
 [type="reset"],
 [type="submit"],
@@ -355,7 +349,7 @@ button {
     outline: transparent;
 }
 
-.button:hover,
+.foot-button:hover,
 [type="button"]:hover,
 [type="reset"]:hover,
 [type="submit"]:hover,
@@ -363,7 +357,7 @@ button:hover {
     opacity: .9;
 }
 
-.button:active,
+.foot-button:active,
 [type="button"]:active,
 [type="reset"]:active,
 [type="submit"]:active,
@@ -381,24 +375,24 @@ button:disabled:hover {
     cursor: not-allowed;
 }
 
-.button.outline {
+.foot-button.outline {
     color: var(--foot-primary-color);
     background-color: transparent;
     border-color: var(--foot-primary-color);
     border-width: 2px;
 }
 
-.button.outline.light {
+.foot-button.outline.light {
     border-color: var(--foot-mid);
     color: var(--foot-mid);
 }
 
-.button.outline.dark {
+.foot-button.outline.dark {
     border-color: var(--foot-dark);
     color: var(--foot-dark);
 }
 
-.button svg,
+.foot-button svg,
 button svg {
     margin-right: .5rem;
     max-height: .9rem;

@@ -4,17 +4,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>foot.css | Small footprint CSS framework | Docs</title>
     <link rel="stylesheet" href="https://unpkg.com/footcss">
-    <link rel="stylesheet" href="../dist/foot.min.css">
+    <!-- <link rel="stylesheet" href="../dist/foot.min.css"> -->
     <link rel="stylesheet" href="css/styles.css">
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"></script>
 </head>
 <body>
-    <div class="container foot-container-md">
+    <div class="foot-container foot-md">
 
-        <nav class="nav foot-flex-justify-center foot-flex-align-center">
-            <a class="nav-item" href="index.html">Home</a>
-            <a class="nav-item" href="docs.html">Docs</a>            
-            <a class="nav-item" href="https://github.com/riccicedric/foot-css">Github</a>
+        <nav class="foot-nav foot-flex-justify-center foot-flex-align-center">
+            <a class="foot-nav-item" href="index.html">Home</a>
+            <a class="foot-nav-item" href="docs.html">Docs</a>            
+            <a class="foot-nav-item" href="https://github.com/riccicedric/foot-css">Github</a>
         </nav>
 
         <div class="title foot-mb-2">
@@ -45,8 +45,8 @@
         <!-- Container -->
         <div class="foot-pb-1">
             <h5 class="foot-pb-1" id="simple-grid-system">Container</h5>
-            <p class="foot-pb-1">The responsive <code>.container</code> class allow you to center block-level elements on the page. Additionals fixed-width classes can be added to provide fixed-width <code>.foot-container-sm</code>, <code>.foot-container-md</code>, <code>.foot-container-lg</code>, <code>.foot-container-xl</code></p>  
-            <pre><code>&lt;div class=&quot;container foot-container-lg&quot;&gt;
+            <p class="foot-pb-1">The responsive <code>.foot-container</code> class allow you to center block-level elements on the page. Additionals fixed-width classes can be added to provide fixed-width <code>.foot-sm</code>, <code>.foot-md</code>, <code>.foot-lg</code>, <code>.foot-xl</code></p>  
+            <pre><code>&lt;div class=&quot;foot-container foot-lg&quot;&gt;
     &lt;div class=&quot;foot-row&quot;&gt;
         ...
     &lt;/div&gt;
@@ -110,19 +110,17 @@
             <h5 class="foot-pb-1" id="installation">Buttons</h5>
             <p><strong>foot.css</strong> includes predefined button styles that can be used in different situations. The buttons support icons as well with the help of the <a href="https://fontawesome.com/start" target="_blank"><b>Font Awesome</b></a> library, that you will need to add to your document head.</p>
             <p class="foot-pt-1">
-                <input type="submit" value="Input Submit">            
-            </p>
-            <pre><code>&lt;input type=&quot;submit&quot; value=&quot;Input Submit&quot;&gt;</code></pre>
-            <p class="foot-pt-1">
+                <input type="submit" value="Input Submit">
                 <button>Button</button>
-                <button type="submit"><i class="fas fa-paper-plane"></i>Submit Button</button>
+                <button type="submit"><i class="fas fa-paper-plane"></i>Submit Button</button>         
             </p>
-            <pre><code>&lt;a class=&quot;button outline&quot;&gt;Outline&lt;/a&gt;
+            <pre><code>&lt;input type=&quot;submit&quot; value=&quot;Input Submit&quot;&gt;
+&lt;button&gt;Button&lt;/button&gt;                
 &lt;button type=&quot;submit&quot;&gt;&lt;i class=&quot;fas fa-user&quot;&gt;&lt;/i&gt;Submit Button&lt;/button&gt;</code></pre>
 
             <p class="foot-pt-1">
-                <a href="#" class="button">Link Button</a>
-                <a href="#" class="button"><i class="fas fa-link"></i>Link Button</a>
+                <a href="#" class="foot-button">Link Button</a>
+                <a href="#" class="foot-button"><i class="fas fa-link"></i>Link Button</a>
             </p>
             <pre><code>&lt;a href=&quot;#&quot; class=&quot;button&quot;&gt;Link Button&lt;/a&gt;
 &lt;a href=&quot;#&quot; class=&quot;button&quot;&gt;&lt;i class=&quot;fas fa-link&quot;&gt;&lt;/i&gt;Link Button&lt;/a&gt;</code></pre>
@@ -135,9 +133,9 @@
 &lt;a href=&quot;#&quot;&gt;&lt;button&gt;&lt;i class=&quot;fas fa-link&quot;&gt;&lt;/i&gt;Button Link&lt;/button&gt;&lt;/a&gt;</code></pre>
 
             <div class="foot-pt-1">
-                <a class="button outline">Outline</a>
-                <a class="button outline dark">Outline dark</a>
-                <a class="button outline light">Outline light</a>                              
+                <a class="foot-button outline">Outline</a>
+                <a class="foot-button outline dark">Outline dark</a>
+                <a class="foot-button outline light">Outline light</a>                              
             </div>
             <p>To give an outlined look to your buttons, just add the <code>.outline</code> class with the optional style classes <code>.dark</code> or <code>.light</code>.</p>
             <pre><code>&lt;a class=&quot;button outline&quot;&gt;Outline&lt;/a&gt;
@@ -188,6 +186,75 @@
         <div class="sectionTitleContainer">
             <h3 id="components">Components</h3>
         </div>        
+
+        <!-- Nav -->
+        <div class="foot-pb-1">
+            <h5 class="foot-pb-1" id="nav">Nav</h5>
+            <p>You can easily create navigation bar by adding the <code>.foot-nav</code> class to a container element. Use the <code>.foot-nav-logo</code>, <code>foot-nav-item</code> classes to add childs elements, and additional utilities classes for positioning.</p>
+            <div class="foot-mt-2">
+                <nav class="foot-nav sectionTitleContainer">
+                    <h1 class="foot-nav-logo foot-primary-color">Logo</h1>
+                    <a class="foot-nav-item" href="#">foot-nav-item</a>
+                    <a class="foot-nav-item" href="#">foot-nav-item</a>
+                    <a class="foot-nav-item" href="#">foot-nav-item</a>
+                    <a class="foot-nav-item" href="#">foot-nav-item</a>
+                </nav>
+
+                <pre class="foot-mb-2"><code>&lt;nav class=&quot;foot-nav&quot;&gt;
+    &lt;h1 class=&quot;foot-nav-logo foot-primary-color&quot;&gt;Logo&lt;/h1&gt;
+    &lt;a class=&quot;foot-nav-item&quot; href=&quot;#&quot;&gt;foot-nav-item&lt;/a&gt;
+    &lt;a class=&quot;foot-nav-item&quot; href=&quot;#&quot;&gt;foot-nav-item&lt;/a&gt;
+    &lt;a class=&quot;foot-nav-item&quot; href=&quot;#&quot;&gt;foot-nav-item&lt;/a&gt;
+    &lt;a class=&quot;foot-nav-item&quot; href=&quot;#&quot;&gt;foot-nav-item&lt;/a&gt;
+&lt;/nav&gt;</code></pre>                
+
+                <nav class="foot-nav foot-flex-justify-center sectionTitleContainer">
+                    <a class="foot-nav-item" href="#">foot-nav-item</a>
+                    <a class="foot-nav-item" href="#">foot-nav-item</a>
+                    <h1 class="foot-nav-logo foot-primary-color">Logo</h1>                    
+                    <a class="foot-nav-item" href="#">foot-nav-item</a>
+                    <a class="foot-nav-item" href="#">foot-nav-item</a>
+                </nav>   
+
+                <pre class="foot-mb-2"><code>&lt;nav class=&quot;foot-nav foot-flex-justify-center&quot;&gt;
+    &lt;a class=&quot;foot-nav-item&quot; href=&quot;#&quot;&gt;foot-nav-item&lt;/a&gt;
+    &lt;a class=&quot;foot-nav-item&quot; href=&quot;#&quot;&gt;foot-nav-item&lt;/a&gt;
+    &lt;h1 class=&quot;foot-nav-logo foot-primary-color&quot;&gt;Logo&lt;/h1&gt;                    
+    &lt;a class=&quot;foot-nav-item&quot; href=&quot;#&quot;&gt;foot-nav-item&lt;/a&gt;
+    &lt;a class=&quot;foot-nav-item&quot; href=&quot;#&quot;&gt;foot-nav-item&lt;/a&gt;
+&lt;/nav&gt; </code></pre>                 
+                
+                <nav class="foot-nav foot-flex-justify-between sectionTitleContainer">
+                    <img src="../docs/img/foot-css.svg" alt="Logo">
+                    <a class="foot-nav-item" href="#">foot-nav-item</a>
+                    <a class="foot-nav-item" href="#">foot-nav-item</a>
+                    <a class="foot-nav-item" href="#">foot-nav-item</a>
+                    <a class="foot-nav-item" href="#">foot-nav-item</a>
+                </nav> 
+                <pre><code>&lt;nav class=&quot;foot-nav foot-flex-justify-between&quot;&gt;
+    &lt;img src=&quot;../docs/img/foot-css.svg&quot; alt=&quot;Logo&quot;&gt;
+    &lt;a class=&quot;foot-nav-item&quot; href=&quot;#&quot;&gt;foot-nav-item&lt;/a&gt;
+    &lt;a class=&quot;foot-nav-item&quot; href=&quot;#&quot;&gt;foot-nav-item&lt;/a&gt;
+    &lt;a class=&quot;foot-nav-item&quot; href=&quot;#&quot;&gt;foot-nav-item&lt;/a&gt;
+    &lt;a class=&quot;foot-nav-item&quot; href=&quot;#&quot;&gt;foot-nav-item&lt;/a&gt;
+&lt;/nav&gt;</code></pre>                
+                
+                <nav class="foot-nav foot-flex-justify-between sectionTitleContainer">
+                    <a class="foot-nav-item" href="#">foot-nav-item</a>
+                    <a class="foot-nav-item" href="#">foot-nav-item</a>
+                    <img src="../docs/img/foot-css.svg" alt="Logo">                
+                    <a class="foot-nav-item" href="#">foot-nav-item</a>
+                    <a class="foot-nav-item" href="#">foot-nav-item</a>
+                </nav>                               
+            </div>
+            <pre><code>&lt;nav class=&quot;foot-nav foot-flex-justify-between&quot;&gt;
+    &lt;a class=&quot;foot-nav-item&quot; href=&quot;#&quot;&gt;foot-nav-item&lt;/a&gt;
+    &lt;a class=&quot;foot-nav-item&quot; href=&quot;#&quot;&gt;foot-nav-item&lt;/a&gt;
+    &lt;img src=&quot;../docs/img/foot-css.svg&quot; alt=&quot;Logo&quot;&gt;                
+    &lt;a class=&quot;foot-nav-item&quot; href=&quot;#&quot;&gt;foot-nav-item&lt;/a&gt;
+    &lt;a class=&quot;foot-nav-item&quot; href=&quot;#&quot;&gt;foot-nav-item&lt;/a&gt;
+&lt;/nav&gt;</code></pre>
+        </div>
 
         <footer class="foot-container-md foot-py-2">
             <p>Made with <span>♥</span> by <a href="https://riccicedricdesign.com"><strong>Cédric Ricci</strong></a></p>
