@@ -56,7 +56,7 @@
         <!-- Simple Grid System -->
         <div class="foot-pb-1">
             <h5 class="foot-pb-1" id="simple-grid-system">Simple Grid System</h5>
-            <p><strong>foot.css</strong> provides a fluid grid system that resize with the viewport. If you want to center your grid on the page, just warp it in a block-level elements using the <code>.container</code> class.</p>  
+            <p><strong>foot.css</strong> provides a fluid grid system that resize with the viewport. If you want to center your grid on the page, just warp it in a block-level elements using the <code>.container</code> class. The columns will break at </p>  
             <div class="foot-row foot-pt-1">
                 <div class="foot-col"><span class="colCard">.foot-col</span></div>
                 <div class="foot-col"><span class="colCard">.foot-col</span></div>
@@ -334,11 +334,78 @@
 --foot-success: #48BB78;</code></pre>
         </div>        
 
-        <!-- Display utilities classes -->
+        <!-- Positioning utility classes -->
         <div class="foot-pb-1">
-            <h5 class="foot-pb-1" id="display">Display utilities classes</h5>
+            <h5 class="foot-pb-1" id="display">Positioning classes</h5>
+            <p>The positioning classes allow you to position elements on your pages.</p>
+            <p class="foot-mt-2"><strong>Text positioning classes</strong></p>
+            <p><code>.foot-txt-left</code></p>
+            <p><code>.foot-txt-right</code></p>
+            <p><code>.foot-txt-center</code></p>
+            <p class="foot-mt-2"><strong>Full height / width classes</strong></p>
+            <p><code>.foot-full-height-size</code></p>
+            <p><code>.foot-full-hwidth-size</code></p>
+            <p class="foot-mt-2"><strong>Flex classes</strong></p>
+            <div class="foot-row">
+                <div class="foot-col">
+                    <p><code>.foot-flex</code></p>
+                    <p><code>.foot-flex-justify-start</code></p>
+                    <p><code>.foot-flex-justify-center</code></p>
+                    <p><code>.foot-flex-justify-end</code></p>
+                    <p><code>.foot-flex-justify-between</code></p>
+                    <p><code>.foot-flex-justify-around</code></p>
+                </div>
+                <div class="foot-col">
+                    <p><code>.foot-flex-align-start</code></p>
+                    <p><code>.foot-flex-align-center</code></p>
+                    <p><code>.foot-flex-align-end</code></p>
+                    <p><code>.foot-flex-vertical-dir</code></p>
+                    <p><code>.foot-flex-horizontal-dir</code></p>
+                    <p><code>.foot-flex-centered</code></p>                    
+                </div>
+            </div>
+            <p class="foot-mt-2"><strong>Padding / Margin classes</strong></p>
+            <div class="foot-row">
+                <div class="foot-col">
+                    <p><code>.foot-pa-1</code> <i>all-around padding of <b>1em</b></i></p>
+                    <p><code>.foot-pa-2</code> <i>all-around padding of <b>2em</b></i></p>
+                    <p><code>.foot-pa-y</code> <i>vertical padding of <b>1em</b></i></p>
+                    <p><code>.foot-pa-y</code> <i>vertical padding of <b>2em</b></i></p>
+                    <p><code>.foot-pa-x</code> <i>horizontal padding of <b>1em</b></i></p>
+                    <p><code>.foot-pa-x</code> <i>horizontal padding of <b>2em</b></i></p>
+                    <p><code>.foot-pt-1</code> <i>top padding of <b>1em</b></i></p>
+                    <p><code>.foot-pt-2</code> <i>top padding of <b>2em</b></i></p>
+                    <p><code>.foot-pb-1</code> <i>bottom padding of <b>1em</b></i></p>
+                    <p><code>.foot-pb-2</code> <i>bottom padding of <b>2em</b></i></p>
+                    <p><code>.foot-pl-1</code> <i>left padding of <b>1em</b></i></p>
+                    <p><code>.foot-pl-2</code> <i>left padding of <b>2em</b></i></p>
+                    <p><code>.foot-pr-1</code> <i>right padding of <b>1em</b></i></p>
+                    <p><code>.foot-pr-2</code> <i>right padding of <b>2em</b></i></p>
+                </div>
+                <div class="foot-col">
+                    <p><code>.foot-ma-1</code> <i>all-around margin of <b>1em</b></i></p>
+                    <p><code>.foot-ma-2</code> <i>all-around margin of <b>2em</b></i></p>
+                    <p><code>.foot-ma-y</code> <i>vertical margin of <b>1em</b></i></p>
+                    <p><code>.foot-ma-y</code> <i>vertical margin of <b>2em</b></i></p>
+                    <p><code>.foot-ma-x</code> <i>horizontal margin of <b>1em</b></i></p>
+                    <p><code>.foot-ma-x</code> <i>horizontal marging of <b>2em</b></i></p>
+                    <p><code>.foot-mt-1</code> <i>top margin of <b>1em</b></i></p>
+                    <p><code>.foot-mt-2</code> <i>top margin of <b>2em</b></i></p>
+                    <p><code>.foot-mb-1</code> <i>bottom margin of <b>1em</b></i></p>
+                    <p><code>.foot-mb-2</code> <i>bottom margin of <b>2em</b></i></p>
+                    <p><code>.foot-ml-1</code> <i>left margin of <b>1em</b></i></p>
+                    <p><code>.foot-ml-2</code> <i>left margin of <b>2em</b></i></p>
+                    <p><code>.foot-mr-1</code> <i>right margin of <b>1em</b></i></p>
+                    <p><code>.foot-mr-2</code> <i>right margin of <b>2em</b></i></p>                   
+                </div>
+            </div>
+        </div>
+
+        <!-- Display utility classes -->
+        <div class="foot-pb-1">
+            <h5 class="foot-pb-1" id="display">Display utility classes</h5>
             <p class="foot-mt-2"><strong>Hide</strong></p>
-            <p>The display utilities classes allow you to display or hide certain elements.</p>
+            <p>The display utility classes allow you to display or hide certain elements.</p>
             <p><code>.foot-hidden</code> will apply <b>display: none;</b> to your element.</p>
             <p class="foot-mt-2" id="display-responsive"><strong>Responsive show / hide</strong></p>
             <p><code>.foot-[xs, sm, md, lg, xl]-hide</code> and  <code>.foot-[xs, sm, md, lg, xl]-show</code> will hides or shows elements according to a specific viewport sizes.</p>

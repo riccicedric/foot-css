@@ -1,7 +1,7 @@
 {
     "name": "footcss",
     "filename": "foot.min.css",
-    "version": "0.1.8",
+    "version": "0.1.9",
     "description": "Small footprint CSS framework",
     "main": "./dist/foot.min.css",
     "scripts": {

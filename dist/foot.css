@@ -1,5 +1,5 @@
 /*==================================================================
-  foot.css v0.1.8
+  foot.css v0.1.9
   Copyright (c) 2020 Cédric Ricci | https://riccicedricdesign.com
   MIT License | https://github.com/riccicedric/foot-css
 ==================================================================*/
@@ -39,25 +39,56 @@ body {
     padding: 0 1em;
 }
 
-.foot-container.foot-xl {
-    max-width: 1296px;
-}
-
-.foot-container.foot-lg {
-    max-width: 976px;
-}
-
-.foot-container.foot-md {
-    max-width: 856px;
+.foot-container.foot-xs {
+    max-width: 496px;
 }
 
 .foot-container.foot-sm {
     max-width: 616px;
 }
 
-.foot-container.foot-xs {
-    max-width: 496px;
+.foot-container.foot-md {
+    max-width: 856px;
 }
+
+.foot-container.foot-lg {
+    max-width: 976px;
+}
+
+.foot-container.foot-xl {
+    max-width: 1296px;
+}
+
+/*=============================
+  Grid
+=============================*/
+
+.foot-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.foot-row .foot-col {
+    display: block;
+    flex: 1 1 auto;
+    width: 100%;
+    max-width: 100%;
+    margin-left: 0;
+    padding: 0 1rem;
+}
+
+.foot-row .foot-col:first-child {
+    padding-left: initial;
+}
+
+.foot-row .foot-col:last-child {
+    padding-right: initial;
+    margin-bottom: 1rem;
+}
+
+/*=============================
+  Elements
+=============================*/
 
 h1,
 h2,
@@ -213,6 +244,10 @@ img {
     max-width: 100%;
 }
 
+/*=============================
+  Components
+=============================*/
+
 .foot-nav {
     position: relative;
     display: flex;
@@ -236,6 +271,10 @@ img {
     font-size: 1.75rem;
     font-weight: bold;
 }
+
+/*=============================
+  Forms & Buttons elements
+=============================*/
 
 legend {
     padding: 0 .8em;
@@ -301,12 +340,12 @@ textarea.success {
 }
 
 select {
-    -webkit-appearance: none;
     color: var(--foot-dark);
     background: var(--foot-light) no-repeat 100%;
     background-image: url("data:image/svg+xml,%3C?xml version='1.0' encoding='UTF-8' standalone='no'?%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg width='100%25' height='100%25' viewBox='0 0 8 8' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xml:space='preserve' xmlns:serif='http://www.serif.com/' style='fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;'%3E%3Cpath id='ion-arrow-down-b' d='M0.075,2.225c-0.05,-0.05 -0.075,-0.15 -0.075,-0.225c0,-0.225 0.2,-0.4 0.425,-0.4l7.15,0c0.225,0 0.425,0.175 0.425,0.4c0,0.075 -0.025,0.15 -0.075,0.2l-0.05,0.075l-3.4,3.9c-0.125,0.125 -0.275,0.225 -0.475,0.225c-0.2,0 -0.35,-0.1 -0.475,-0.225l-3.4,-3.9l-0.05,-0.05Z' style='fill-rule:nonzero;'/%3E%3C/svg%3E");
     background-size: 8px;
     background-origin: content-box;
+    -webkit-appearance: none;
 }
 
 [type="checkbox"],
@@ -339,14 +378,15 @@ button {
     font-size: var(--foot-font-size);
     line-height: 1;
     text-align: center;
-    -webkit-transition: opacity .2s ease;
     transition: opacity .2s ease;
     text-decoration: none;
     transform: scale(1);
-    -webkit-transform: scale(1);
     display: inline-block;
     cursor: pointer;
     outline: transparent;
+    -webkit-appearance: none;
+    -webkit-transition: opacity .2s ease;
+    -webkit-transform: scale(1);
 }
 
 .foot-button:hover,
@@ -362,9 +402,9 @@ button:hover {
 [type="reset"]:active,
 [type="submit"]:active,
 button:active {
-    -webkit-transform: scale(.98);
-    transform: scale(.98);
     outline: transparent;
+    -webkit-transform: scale(.95);
+    transform: scale(.95);
 }
 
 input:disabled,
@@ -404,11 +444,11 @@ button svg {
 
 html:lang(ja),
 .foot-ja {
-  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans Japanese", Meiryo, "Yu Gothic Medium", sans-serif;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans Japanese", Meiryo, "Yu Gothic Medium", sans-serif;
 }
 
 html:lang(ja) h1,
-h1.foot-ja ,
+h1.foot-ja,
 html:lang(ja) h2,
 h2.foot-ja,
 html:lang(ja) h3,
@@ -419,28 +459,28 @@ html:lang(ja) h5,
 h5.foot-ja,
 html:lang(ja) h6,
 h6.foot-ja {
-    font-weight: bold; 
+    font-weight: bold;
 }
 
 :lang(ja) ins,
 :lang(ja) u {
-  border-bottom: .5px solid;
-  text-decoration: none;
+    border-bottom: .5px solid;
+    text-decoration: none;
 }
 
-:lang(ja) s + del,
-:lang(ja) s + s,
-:lang(ja) u + ins,
-:lang(ja) u + u,
-:lang(ja) del + del,
-:lang(ja) del + s,
-:lang(ja) ins + ins,
-:lang(ja) ins + u {
-  margin-left: .2em;
+:lang(ja) s+del,
+:lang(ja) s+s,
+:lang(ja) u+ins,
+:lang(ja) u+u,
+:lang(ja) del+del,
+:lang(ja) del+s,
+:lang(ja) ins+ins,
+:lang(ja) ins+u {
+    margin-left: .2em;
 }
 
 /*=============================
-  Utilities
+  Utilities Classes
 =============================*/
 
 .foot-txt-left {
@@ -686,33 +726,6 @@ h6.foot-ja {
 }
 
 /*=============================
-  Grid
-=============================*/
-
-.foot-row {
-    display: flex;
-    flex-direction: row;
-}
-
-.foot-row .foot-col {
-    display: block;
-    flex: 1 1 auto;
-    width: 100%;
-    max-width: 100%;
-    margin-left: 0;
-    margin-bottom: 1rem;
-    padding: 0 1rem;
-}
-
-.foot-row .foot-col:first-child {
-    padding-left: initial;
-}
-
-.foot-row .foot-col:last-child {
-    padding-right: initial;
-}
-
-/*=============================
   Media Queries
 =============================*/
 
@@ -745,7 +758,7 @@ h6.foot-ja {
 
     .foot-flex {
         flex-direction: column;
-    }   
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -777,10 +790,6 @@ h6.foot-ja {
 
     .foot-row .foot-col {
         padding: 0;
-    }
-
-    .foot-row .foot-col:last-child {
-        margin-bottom: 1rem;
     }
 
 }
