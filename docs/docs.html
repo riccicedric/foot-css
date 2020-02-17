@@ -256,6 +256,100 @@
 &lt;/nav&gt;</code></pre>
         </div>
 
+        <!-- Utilities -->
+        <div class="sectionTitleContainer">
+            <h3 id="utilities">Utilities</h3>
+        </div>   
+
+        <!-- Customization -->
+        <div class="foot-pb-1">
+            <h5 class="foot-pb-1" id="customization">Customization</h5>
+            <p><strong>foot.css</strong> use CSS variables to give you an easy method to override some of the default settings</p>
+            <pre><code>:root {
+    --foot-primary-color: #434190;
+    --foot-secondary-color: #EBF4FF;
+    --foot-link-color: #0366d6;
+    --foot-radius: .25rem;
+}</code></pre>
+            <p>To overide the default <strong>foot.css</strong> variables in your project, just import <code>foot.css</code> in your stylesheet, then add your <code>:root</code> selector with your variables values after.</p>
+            <pre><code>@import url("https://unpkg.com/footcss");
+
+:root {
+    --foot-primary-color: red; /* your primary color */
+    --foot-radius: 0; /* no border radius */
+}</code></pre>
+        <p><i>Example: Change the<code>--foot-primary-color</code> variable value to <code>red</code>, and set the <code>--foot-radius</code> variable value to 0 to get rid of the border-radius aesthetic throughout all the classes.</i></p>
+        </div>        
+
+        <!-- Colors -->
+        <div class="foot-pb-1">
+            <h5 class="foot-pb-1" id="colors">Colors</h5>
+            <p><strong>foot.css</strong> give you access to color utilities easily customizable via CSS variables, for changing text, background and link colors.</p>
+            <div class="colors foot-row foot-flex-justify-between">
+                <div class="foot-col">
+                    <p class="foot-txt-primary">.foot-txt-primary</p>
+                    <p class="foot-txt-secondary">.foot-txt-secondary</p>
+                    <p class="foot-txt-link">.foot-bg-link</p>
+                    <p class="foot-txt-light">.foot-txt-light</p>
+                    <p class="foot-txt-mid">.foot-txt-mid</p>
+                    <p class="foot-txt-dark">.foot-txt-dark</p>
+                    <p class="foot-txt-error">.foot-txt-error</p>
+                    <p class="foot-txt-success">.foot-txt-success</p>   
+                    <pre><code>&lt;p class=&quot;foot-txt-primary&quot;&gt;...&lt;/p&gt;
+&lt;p class=&quot;foot-txt-secondary&quot;&gt;...&lt;/p&gt;
+&lt;p class=&quot;foot-txt-link&quot;&gt;...k&lt;/p&gt;
+&lt;p class=&quot;foot-txt-light&quot;&gt;...&lt;/p&gt;
+&lt;p class=&quot;foot-txt-mid&quot;&gt;...&lt;/p&gt;
+&lt;p class=&quot;foot-txt-dark&quot;&gt;...&lt;/p&gt;
+&lt;p class=&quot;foot-txt-error&quot;&gt;...&lt;/p&gt;
+&lt;p class=&quot;foot-txt-success&quot;&gt;...&lt;/p&gt;</code></pre>                
+                </div>
+                <div class="foot-col">
+                    <p class="foot-bg-primary">.foot-bg-primary</p>
+                    <p class="foot-bg-secondary">.foot-bg-secondary</p>
+                    <p class="foot-bg-link">.foot-bg-link</p>
+                    <p class="foot-bg-light">.foot-bg-light</p>
+                    <p class="foot-bg-mid">.foot-bg-mid</p>
+                    <p class="foot-bg-dark">.foot-bg-dark</p>
+                    <p class="foot-bg-error">.foot-bg-error</p>
+                    <p class="foot-bg-success">.foot-bg-success</p>   
+                    <pre><code>&lt;p class=&quot;foot-bg-primary&quot;&gt;...&lt;/p&gt;
+&lt;p class=&quot;foot-bg-secondary&quot;&gt;...&lt;/p&gt;
+&lt;p class=&quot;foot-bg-link&quot;&gt;...k&lt;/p&gt;
+&lt;p class=&quot;foot-bg-light&quot;&gt;...&lt;/p&gt;
+&lt;p class=&quot;foot-bg-mid&quot;&gt;...&lt;/p&gt;
+&lt;p class=&quot;foot-bg-dark&quot;&gt;...&lt;/p&gt;
+&lt;p class=&quot;foot-bg-error&quot;&gt;...&lt;/p&gt;
+&lt;p class=&quot;foot-bg-success&quot;&gt;...&lt;/p&gt;</code></pre>          
+                </div>           
+            </div>
+            <p>The <strong>foot.css default colors CSS variables</strong> are the following:</p>
+            <pre><code>--foot-primary-color: #434190;
+--foot-secondary-color: #EBF4FF;
+--foot-link-color: #0366d6;
+--foot-light: #f7f7f9;
+--foot-mid: #A0AEC0;
+--foot-dark: #1A202C;
+--foot-error: #E53E3E;
+--foot-success: #48BB78;</code></pre>
+        </div>        
+
+        <!-- Display utilities classes -->
+        <div class="foot-pb-1">
+            <h5 class="foot-pb-1" id="display">Display utilities classes</h5>
+            <p>The display utilities classes allow you to display or hide certain elements.</p>
+            <p><code>.foot-hidden</code> will apply <b>display: none;</b> to your element.</p>
+            <strong>Responsive display utilities classes</strong>
+            <p><code>.foot-[size]-hide</code> and  <code>.foot-[size]-hide</code> will hide or show according to a specific viewport sizes.</p>
+            <ul>
+                <li><code>hide-xs</code> hides elements when the window width is smaller than or equal to <strong>480px</strong>.</li>
+                <li><code>hide-sm</code> hides elements when the window width is smaller than or equal to <strong>600px</strong>.</li>
+                <li><code>hide-md</code> hides elements when the window width is smaller than or equal to <strong>840px</strong>.</li>
+                <li><code>hide-lg</code> hides elements when the window width is smaller than or equal to <strong>960px</strong>.</li>
+                <li><code>hide-xl</code> hides elements when the window width is smaller than or equal to <strong>1280px</strong>.</li>
+            </ul>
+        </div>
+
         <footer class="foot-container-md foot-py-2">
             <p>Made with <span>♥</span> by <a href="https://riccicedricdesign.com"><strong>Cédric Ricci</strong></a></p>
         </footer>

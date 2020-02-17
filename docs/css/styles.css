@@ -74,9 +74,9 @@ footer p span {
     display: block;
     width: 100%;
     line-height: 2.5em;
-    border-radius: 0.25rem;
+    border-radius: var(--foot-radius);
     color: #eeeeee;
-    background: #2d3748;
+    background: #888888;
     text-align: center;
 }
 
@@ -113,4 +113,9 @@ code {
 }
 .badges img {
     padding: .25rem;
+}
+
+.colors p {
+    border: 1px solid #eeeeee;
+    padding: .25em;
 }
