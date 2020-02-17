@@ -1,5 +1,5 @@
 /*==================================================================
-  foot.css v0.1.7
+  foot.css v0.1.8
   Copyright (c) 2020 Cédric Ricci | https://riccicedricdesign.com
   MIT License | https://github.com/riccicedric/foot-css
 ==================================================================*/
@@ -150,13 +150,13 @@ pre {
     background: var(--foot-light);
     color: var(--foot-dark);
     display: block;
+    border-radius: var(--foot-radius);
     font-family: monaco, "Consolas", "Lucida Console", monospace;
     font-size: 1em;
     margin: 1rem 0;
     padding: 1rem;
     white-space: pre-wrap;
     overflow-wrap: break-word;
-    border-radius: var(--foot-radius);
 }
 
 code {
