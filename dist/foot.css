@@ -1,5 +1,5 @@
 /*==================================================================
-  foot.css v0.2.0
+  foot.css v0.2.1
   Copyright (c) 2020 Cédric Ricci | https://riccicedricdesign.com
   MIT License | https://github.com/riccicedric/foot-css
 ==================================================================*/
@@ -680,6 +680,10 @@ h6.foot-ja {
     color: var(--foot-secondary-color) !important;
 }
 
+.foot-txt-link {
+    color: var(--foot-link) !important;
+}
+
 .foot-txt-light {
     color: var(--foot-light) !important;
 }
@@ -706,6 +710,10 @@ h6.foot-ja {
 
 .foot-bg-secondary {
     background: var(--foot-secondary-color) !important;
+}
+
+.foot-bg-link {
+    background: var(--foot-link) !important;
 }
 
 .foot-bg-light {
